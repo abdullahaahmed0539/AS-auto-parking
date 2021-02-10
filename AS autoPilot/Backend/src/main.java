@@ -124,7 +124,7 @@ public class main {
                     re_initialize_points();
                 }
 
-                // if(k==9){i = clustering1(i, k);end_process=true;}else{
+               
                 i = clustering(i, k);end_process=true;//}
                 j = i;
                 k = 9;
@@ -298,7 +298,7 @@ public class main {
                 System.out.println(fx);
             }
             //--------------------------
-        //    path.display();
+        
 
         }
 
@@ -728,15 +728,11 @@ public class main {
         public static boolean crash(){
 
             if ((A.x<712 && D.x>=712) && (A.y >400 || D.y >400)){  //to check if car crosses right lane
-                //System.out.println("crash as car crossed right lane");
                 return true;}
             if (((B.x<508 && C.x>=508) && (B.y >400 || C.y >400)) || ((A.x<508 && D.x>=508) && (A.y >400 || D.y >400))){ //to check if car crosses left lane
-                //System.out.println("crash as car crossed left lane");
                 return true;}
             if (A.y>=700 || D.y>=700){  //to check if car crosses footpath
-                //System.out.println("crash as car crossed footpath");
                 return true;}
-
             return false;
         }
 
